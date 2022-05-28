@@ -1,5 +1,5 @@
 import React from "react";
-import AddRecipe from "./AddRecipe";
+import ShowRecipe from "./ShowRecipe";
 
 function RecipeList({ recipes, deleteRecipe }) {
 
@@ -20,7 +20,8 @@ function RecipeList({ recipes, deleteRecipe }) {
             <th>Actions</th>
           </tr>
         </thead>
-        <tbody>{recipes.map((recipe, index) => (<AddRecipe recipe={recipe} deleteRecipe={() => deleteRecipe(index)} key={index} />))}
+        <tbody>
+          {recipes.map((recipe, index) => (<ShowRecipe recipe={recipe} deleteRecipe={() => deleteRecipe(index)} key={index} />))}
         </tbody>
       </table>
     </div>

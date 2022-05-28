@@ -33,77 +33,62 @@ function RecipeCreate({ handleRecipes }) {
   return (
     <form onSubmit={handleSubmit} name="create">
       <table>
-        <thead>
-          <tr>
-            <th>
-              <label htmlFor="name">Name</label>
-            </th>
-            <th>
-              <label htmlFor="cuisine">Cuisine</label>
-            </th>
-            <th>
-              <label htmlFor="photo">Photo</label>
-            </th>
-            <th>
-              <label htmlFor="ingredients">Ingredients</label>
-            </th>
-            <th>
-              <label htmlFor="preparations">Preparation</label>
-            </th>
-            <th>
-              <label htmlFor="actions">Actions</label>
-            </th>
-          </tr>
-        </thead>
         <tbody>
-          <tr>
-            <td>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                value={formData.name}
-                onChange={handleChange}
-              />
-            </td>
-            <td>
-              <input
-                type="text"
-                id="cuisine"
-                name="cuisine"
-                value={formData.cuisine}
-                onChange={handleChange}
-              />
-            </td>
-            <td>
-              <input
-                type="url"
-                id="photo"
-                name="photo"
-                value={formData.photo}
-                onChange={handleChange}
-              />
-            </td>
-            <td>
-              <textarea
-                id="ingredients"
-                name="ingredients"
-                value={formData.ingredients}
-                onChange={handleChange}
-              />
-            </td>
-            <td>
-              <textarea
-                id="preparation"
-                name="preparation"
-                value={formData.preparation}
-                onChange={handleChange}
-              />
-            </td>
-            <td>
-              <button type="submit">Create</button>
-            </td>
-          </tr>
+          <tfoot>
+            <tr>
+              <td>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Name"
+                  value={formData.name}
+                  onChange={handleChange}
+                />
+              </td>
+              <td>
+                <input
+                  type="text"
+                  id="cuisine"
+                  name="cuisine"
+                  placeholder="Cuisine"
+                  value={formData.cuisine}
+                  onChange={handleChange}
+                />
+              </td>
+              <td>
+                <input
+                  type="url"
+                  id="photo"
+                  name="photo"
+                  placeholder="URL"
+                  value={formData.photo}
+                  onChange={handleChange}
+                />
+              </td>
+              <td>
+                <textarea
+                  id="ingredients"
+                  name="ingredients"
+                  placeholder="Ingredients"
+                  value={formData.ingredients}
+                  onChange={handleChange}
+                />
+              </td>
+              <td>
+                <textarea
+                  id="preparation"
+                  name="preparation"
+                  placeholder="Preparation"
+                  value={formData.preparation}
+                  onChange={handleChange}
+                />
+              </td>
+              <td>
+                <button type="submit">Create</button>
+              </td>
+            </tr>
+          </tfoot>
         </tbody>
       </table>
     </form>

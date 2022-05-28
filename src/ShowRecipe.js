@@ -1,14 +1,14 @@
 import React from "react";
 
-function AddRecipe({ recipe, index, deleteRecipe }) {
+function ShowRecipe({ recipe, index, deleteRecipe }) {
     if (recipe) {
         return (
             <tr id={index}>
                 <td>{recipe.name}</td>
                 <td>{recipe.cuisine}</td>
-                <td><img src={recipe.photo} /></td>
-                <td>{recipe.ingredients}</td>
-                <td>{recipe.preparation}</td>
+                <td><img src={recipe.photo} alt={recipe.name} /></td>
+                <td className="content_td"><p>{recipe.ingredients}</p></td>
+                <td className="content_td"><p>{recipe.preparation}</p></td>
                 <td>
                     <button name="delete"
                         id={index}
@@ -20,4 +20,4 @@ function AddRecipe({ recipe, index, deleteRecipe }) {
     };
 };
 
-export default AddRecipe;
+export default ShowRecipe;
