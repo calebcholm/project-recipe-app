@@ -33,7 +33,6 @@ function RecipeCreate({ handleRecipes }) {
   return (
     <form onSubmit={handleSubmit} name="create">
       <table>
-        <tbody>
           <tfoot>
             <tr>
               <td>
@@ -89,7 +88,6 @@ function RecipeCreate({ handleRecipes }) {
               </td>
             </tr>
           </tfoot>
-        </tbody>
       </table>
     </form>
   );

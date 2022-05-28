@@ -28,7 +28,7 @@ tbody {
 
 tfoot {
   table-layout:fixed;
-  
+  background-color: #fff0c7;
   width: 100%;
   border-collapse: collapse;
   overflow:hidden;
